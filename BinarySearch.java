@@ -3,7 +3,7 @@ class HelloWorld {
     public static void main(String[] args) {
 
         int arr[] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30, 0, 1, 2, 3, 4, 5 };
-        int num = 5;
+        int num = 4;
 
         /*
          * int low = 0, high = arr.length-1;
@@ -193,7 +193,6 @@ class HelloWorld {
             int mid = (low + high) / 2;
             if (arr[mid] == num)
                 return mid;
-
             else if (arr[mid] >= arr[low]) {
                 // left half is sorted
                 // check if number lies in the sorted half
@@ -206,8 +205,7 @@ class HelloWorld {
                 } else {
                     low = mid + 1;
                 }
-
-            } else if (arr[mid] <= arr[high]) {
+            } else {
                 // right half is sorted
                 if (arr[mid] < num && arr[high] >= num) {
                     // number lies in this half
