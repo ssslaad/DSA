@@ -3,6 +3,7 @@ https://developer.ibm.com/learningpaths/java-get-started
 # DSA
 All DSA related questions and their solutions
 
+# JAVA Topics
 Classes and objects
 Interfaces
 Comparable, Comparator
