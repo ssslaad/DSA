@@ -2,24 +2,24 @@ public class Sorting {
 
     public static void main(String[] args) {
 
-        int arr[] = { 1, 3, 5, 7, 9, 0, 2, 4, 6, 8, 10 };
-        int n = arr.length - 1;
+        int arr[] = { 1, 3, 3, 4, 4, 5, 7, 9 };
+        int arr1[] = { 3, 5, 7, 7, 9, 10, 11, 12, 13, 14, 15 };
+        int n1 = arr.length;
+        int n2 = arr1.length;
 
-        for (int value : arr) {
-            System.out.print(value + " ,");
-        }
-        System.out.println("");
+        // for (int value : arr) {
+        // System.out.print(value + " ,");
+        // }
+        // System.out.println("");
 
         // selectionSort(arr, num);
         // bubbleSort(arr, num);
         // insertionSort(arr, num);
         // mergeSortedArrays(arr, num, arr2, num2);
         // mergeSortedSubArrays2(arr, 2, 4, 7);
-        mergeSort(arr, 0, n);
-
-        for (int value : arr) {
-            System.out.print(value + " ,");
-        }
+        // mergeSort(arr, 0, n);
+        // Sorting2.intersectionOfTwoSortedArrays(arr, n1, arr1, n2);
+        Sorting2.unionOfTwoSortedArrays(arr, n1, arr1, n2);
 
     }
 
