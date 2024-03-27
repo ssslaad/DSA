@@ -1,8 +1,5 @@
 https://developer.ibm.com/learningpaths/java-get-started
 
-# DSA
-
-All DSA related questions and their solutions
 
 # JAVA Topics
 
@@ -24,12 +21,18 @@ Scaler Master class Streams and Lambdas:
    Similar to arrow functions in javascript
 4. Stream? - Lazy evaluation
 
-# Sorting
 
+# DSA Topics
+
+## Sorting:
+Reference links:
 https://www.geeksforgeeks.org/sorting-algorithms/
 
-Collections.sort method
-Arrays.sort method
-Sorting in Java and C++ STL
-Stability
-Sorting mechanisms
+### 1. Insertion Sort - get current index value and try to fit it in sorted manner before the current index (which are already sorted).
+Best case - O(n)
+Worst Case - O(n^2)
+
+Optimizing algorithm -
+If we can use binary search to identify the location of current element, we can reduce worst case time complexity to O(n.logn)
+
+### 2. Selection Sort - Find the smallest number and place it at the very start of the array, then increase the head/start pointer by 1 and repeat.

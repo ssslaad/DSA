@@ -74,18 +74,6 @@ class HelloWorld {
      * else if mid element > searched element -> search left sub array
      * else search right subarray
      * 
-     **/
-    /**
-     * Binary Search First Occurrence
-     * 
-     * Start searching element in mid of sorted array
-     * if mid element is searched element ->
-     * check if previous element is also the searched element
-     * -> if yes, search left sub array
-     * -> else return mid as result
-     * else if mid element > searched element -> search left sub array
-     * else search right subarray
-     * 
      * @param arr
      * @param num
      * @param low
