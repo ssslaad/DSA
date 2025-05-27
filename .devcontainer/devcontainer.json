@@ -1,0 +1,13 @@
+{
+  "name": "Java 21 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack"
+  ],
+  "postCreateCommand": "java -version"
+}
