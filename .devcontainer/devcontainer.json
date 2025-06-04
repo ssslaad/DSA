@@ -3,11 +3,16 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+  "features": {
+    "java": {
+      "version": "21"
+    }
   },
-  "extensions": [
-    "vscjava.vscode-java-pack"
-  ],
+  // "settings": {
+  //   "terminal.integrated.defaultProfile.linux": "bash"
+  // },
+  // "extensions": [
+  //   "vscjava.vscode-java-pack"
+  // ],
   "postCreateCommand": "java -version"
 }

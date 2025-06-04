@@ -1,3 +1,4 @@
+package sort;
 class SortingAlgorithms {
 
     public static void classicInsertionSort(int[] arr, int startIndex, int endIndex) {
