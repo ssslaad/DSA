@@ -1,5 +1,6 @@
 package sort;
-class SortingAlgorithms {
+
+public class Sorting {
 
     public static void classicInsertionSort(int[] arr, int startIndex, int endIndex) {
         for (int i = startIndex + 1; i <= endIndex; i++) {

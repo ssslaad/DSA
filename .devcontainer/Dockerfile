@@ -8,6 +8,8 @@ RUN apt-get update && \
     echo "deb https://packages.adoptium.net/artifactory/deb focal main" | tee /etc/apt/sources.list.d/adoptium.list && \
     apt-get update && \
     apt-get install -y temurin-21-jdk
+RUN apt-get update && apt-get install -y maven
+RUN mvn -v
 
 # Set JAVA_HOME
 ENV JAVA_HOME=/usr/lib/jvm/temurin-21-jdk
