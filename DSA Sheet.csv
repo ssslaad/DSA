@@ -1,0 +1,28 @@
+﻿Problem Statement,Key Points to solve,Solution,Comment,Time Complexity
+Search element in sorted array,Sorted Array,"find mid and define low and high for each loop while low <= high
+both iterative (better bcz of space complexity) or recursive approach","Compare with binary tree
+Max no of iterations --> height of binary tree --> ceiling [log2n]
+log2n time complexity",O(log n)
+Search First/Last Occurrence of element in sorted array,Sorted Array,"same as binary search
+just check if left/right element of mid is same element or not",corner case -> if mid == 0 then code should not check for -1 index and if mid == length of array then should not check for +1 index,O(log n)
+Count of occurrences of a number in sorted array,Sorted Array,"first occurrence, last occurrence and difference","corner case -> if first occurrence is -1 then return -1, don't search for last occurrence",O(log n)
+Count of occurrences of 1 in sorted binary array,Sorted Array,First occurrence of 1 -> length - index of first occurrence of 1,"corner case -> -1 if 1 is not present, 
+only 2 conditions to be checked either value is 1 or 0",O(log n)
+Square root of a number to floor integer value,Sorted Array,from 0 to num/2 use binary search and find number whose sq is closest to num.,maintain a var result -> update it only if sq of mid < num,O(log n)
+Search in infinite sized sorted array,Sorted Array,"Go to index 1, search element, if not found, go to index*2 index and then search and compare values","Instead of dividing the array by 2, we raise index by 2 and then apply binary search
+Corner Case -> For first index (0), check with condition bcz we need to multiply index by 2 on each iteration. So start with 1",O(log k) where k is position/index of value
+Find any peak element,NON Sorted Array,"Go to mid, go the side where element is bigger","corner case -> handle first and last index cases as well, 
+We only find first peak element using this approach",O(log n)
+Search in sorted rotated array,Sorted Rotated Array,"Go to mid, go the corner elements and compare the value with num",,O(log n)
+Find if there is pair with sum x in sorted array,"Sorted Array
+Pair with given sum","Take 2 pointers at 2 ends, increase low or decrease high based on sum value",while (low < high),O(n)
+Find if there is triplet with sum x in sorted array,"Sorted Array
+Triplet with given sum","Go from left to right, find pair with sum (x-currentIndexValue)","Run loop from 0 to n-3 and call pair sum for the remaining array.
+Pass low and high as param to pair with given sum func",O(n^2)
+Median of 2 sorted arrays,,Find mid for both and do left/right in shorter array based on whether all left side of both arrays is less than mid point of shorter array,,
+Find the only repeating element from 0 to n-1,,https://www.geeksforgeeks.org/find-repetitive-element-1-n-1/,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
