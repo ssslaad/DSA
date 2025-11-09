@@ -8,10 +8,11 @@ public class SortingTest {
 
     @Test
     void testInsertionSortAscending(){
-        System.out.println("Classic Insertion Sort Testcase");
+        System.out.println("Testcase Start :: Classic Insertion Sort");
         int[] arr = { 5, 1, 6, 2, 3, 4, 7 };
         Sorting.classicInsertionSort(arr, 0, arr.length - 1);
         assertArrayEquals(new int[]{1,2,3,4,5,6,7}, arr);
+        System.out.println("Testcase End :: Classic Insertion Sort");
     }
 
 }

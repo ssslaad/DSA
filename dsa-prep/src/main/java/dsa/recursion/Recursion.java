@@ -26,6 +26,7 @@
  */
 package recursion;
 
+import java.util.*;
 
 public class Recursion{
     
@@ -43,15 +44,12 @@ public class Recursion{
         // {1,2,3} -> {}, {1}, {2}, {3}, {1,2}, {1.3}, {2,3}, {1,2,3} 
         // either take the digit, or don't take the digit
         if(i>=arr.length){
-            for(Integer integ : ds){
-                System.out.print(integ+ " ");
-            }
-            System.out.println("");
+            System.out.println(ds);
             return;
         }
         ds.add(arr[i]);
         printAllSubsequences(arr, ds, i+1);
-        ds.remove();
+        ds.removeLast();
         printAllSubsequences(arr, ds, i+1);
     }
 
