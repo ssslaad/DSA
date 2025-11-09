@@ -10,7 +10,6 @@ public class SortingTest {
     void testInsertionSortAscending(){
         System.out.println("Classic Insertion Sort Testcase");
         int[] arr = { 5, 1, 6, 2, 3, 4, 7 };
-        
         Sorting.classicInsertionSort(arr, 0, arr.length - 1);
         assertArrayEquals(new int[]{1,2,3,4,5,6,7}, arr);
     }
