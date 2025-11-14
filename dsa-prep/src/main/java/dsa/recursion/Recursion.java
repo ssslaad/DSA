@@ -16,13 +16,31 @@
  *       3. Palindrome
  *       4. Fibonacci
  *       5. Print all subsequences (2 Possible options - Power set algorithm OR Bit Manipulation and calculation)
- *       6. 
- *       7. 
- *       8.  
- *       9.
- *      10. 
+ *       6. Print all subsequences with K sum 
+ *              -> Maintain sum variable along with DS
+ *       7. Print any subsequence with K sum 
+ *              -> once printed return true and don't proceed
+ *       8. Print total no. of subsequences with K sum (Count the subsequences) 
+ *              -> return 1 if condition satisfies, return 0 if condition not satisfied
+ *       9. Merge Sort
+ *              O(n x log2 n) -> nlogn, extra temp space is needed
+ *              -> Uses temporary array for storing result temporarily
+ *              -> divide the array HYPOTHETICALLY in left and right part
+ *              -> sort left subarray, sort right subarray 
+ *              -> merge left, right using 2 pointer approach 
+ *              -> Corner case -> If any of the left/right subarray exhaust, just copy the other subarray
+ *      10. Quick Sort
+ *              -> PARTITION INDEX
+ *              O(n x log2 n) -> nlogn, NO EXTRA SPACE is needed
+ *              -> Pick a pivot (generally 1st) and place it in correct position
+ *              -> Smaller on the left, larger on the right of the pivot
+ *              -> low, high, i, j, pivot
  *      11. 
  *      12.
+ *      13.
+ *      14.
+ *      15.
+ * 
  */
 package recursion;
 
